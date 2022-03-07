@@ -24,7 +24,6 @@ class App {
     }
 
     createDatabaseConnection() {
-        console.log(process.env);
         mongoose.connect(this.databaseUrl);
         const db = mongoose.connection;
         db.on('open', () => {
