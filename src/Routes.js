@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 class Routes {
     routes = express.Router();
     constructor() {
-        this.loadRoutes;
+        this.loadRoutes();
     }
 
     loadRoutes() {
